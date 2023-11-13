@@ -1,0 +1,24 @@
+{
+  "name": "discord-bot",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MGreco2112/DiscordBotJS_Demo.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MGreco2112/DiscordBotJS_Demo/issues"
+  },
+  "homepage": "https://github.com/MGreco2112/DiscordBotJS_Demo#readme",
+  "dependencies": {
+    "discord.js": "^14.14.1"
+  }
+}
