@@ -1,6 +1,11 @@
 import { Client, Events, GatewayIntentBits } from 'discord.js';
 import { config } from 'dotenv';
 import * as rogerroger from "./commands/rogerroger.js";
+import * as uhoh from "./commands/uhoh.js";
+import * as compute from "./commands/compute.js"
+import * as programming from "./commands/programming.js";
+import * as jedi from "./commands/jedi.js";
+
 
 config();
 
@@ -20,6 +25,23 @@ async function handleInteraction(interaction) {
     if (interaction.commandName === 'rogerroger') {
        await rogerroger.execute(interaction);
     }
+
+    if (interaction.commandName === 'uhoh') {
+        await uhoh.execute(interaction);
+    }
+
+    if (interaction.commandName === 'compute') {
+        await compute.execute(interaction);
+    }
+
+    if (interaction.commandName === 'programming') {
+        await programming.execute(interaction);
+    }
+
+    if (interaction.commandName === 'jedi') {
+        await jedi.execute(interaction);
+    }
+
 }
 
 client.once(Events.ClientReady, readyDiscord);
