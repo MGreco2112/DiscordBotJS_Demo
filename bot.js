@@ -5,6 +5,7 @@ import * as uhoh from "./commands/uhoh.js";
 import * as compute from "./commands/compute.js"
 import * as programming from "./commands/programming.js";
 import * as jedi from "./commands/jedi.js";
+import * as army from "./commands/army.js";
 
 
 config();
@@ -40,6 +41,10 @@ async function handleInteraction(interaction) {
 
     if (interaction.commandName === 'jedi') {
         await jedi.execute(interaction);
+    }
+
+    if (interaction.commandName === "army") {
+        await army.execute(interaction);
     }
 
 }
